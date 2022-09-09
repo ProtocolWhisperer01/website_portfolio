@@ -17,7 +17,7 @@ function PageTransitions(){
     allSections.addEventListener('click', (e) =>{
         const id = e.target.dataset.id;
         if(id){
-            //remove selected from he other btns
+            //remove selected from the other btns
             sectBtns.forEach((btn) =>{
                 btn.classList.remove('active')
             })
