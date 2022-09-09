@@ -176,7 +176,7 @@ section{
                     object-fit: cover;
                     transition: all .4s ease-in-out;
                     filter: grayscale(100%);
-                    &:hover{
+                    :hover{
                         filter: greyscale(0);
                     }   
                 }
