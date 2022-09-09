@@ -61,30 +61,53 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #232323;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rebeccapurple;
+  background-color: #483742;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: yellowgreen;
+  background-color: #e39402;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: aquamarine;
+  background-color: #ff394a;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rosybrown;
+  background-color: #aa34d3;
+}
+
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 1s ease-in-out;
+          animation: scaleAnim 1s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 .controls {
